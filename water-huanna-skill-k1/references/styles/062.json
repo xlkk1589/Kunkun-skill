@@ -1,0 +1,62 @@
+{
+  "id": 62,
+  "title": "PCoA可视化+边缘箱式图",
+  "family": "ordination",
+  "source_category": "PCoA/NMDS/UMAP图",
+  "source_category_audited": true,
+  "scientific_question": "探索高维样本在低维空间中的结构",
+  "required_roles": [
+    "feature_matrix",
+    "group",
+    "sample"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "distance_or_embedding_parameters"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite",
+      "marginal"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "embedding_points",
+    "group_encoding",
+    "marginal_distribution",
+    "marginals_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "model_outputs_required"
+  ],
+  "aliases": [
+    "PCoA可视化+边缘箱式图",
+    "id:062",
+    "ordination",
+    "style-062"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

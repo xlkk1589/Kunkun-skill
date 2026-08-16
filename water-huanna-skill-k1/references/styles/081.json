@@ -1,0 +1,59 @@
+{
+  "id": 81,
+  "title": "免疫细胞亚群森林图",
+  "family": "forest",
+  "source_category": "三元图",
+  "source_category_audited": false,
+  "scientific_question": "比较效应量及其不确定性",
+  "required_roles": [
+    "estimate",
+    "lower",
+    "term",
+    "upper"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "confidence_interval"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "confidence_intervals",
+    "null_reference",
+    "point_estimates"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 355
+  },
+  "fidelity_risks": [
+    "extreme_aspect_ratio",
+    "model_outputs_required"
+  ],
+  "aliases": [
+    "forest",
+    "id:081",
+    "style-081",
+    "免疫细胞亚群森林图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

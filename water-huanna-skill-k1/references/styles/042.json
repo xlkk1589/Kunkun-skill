@@ -1,0 +1,65 @@
+{
+  "id": 42,
+  "title": "添加显著性星号的热图-分面",
+  "family": "heatmap",
+  "source_category": "基因/蛋白表达图",
+  "source_category_audited": true,
+  "scientific_question": "识别矩阵模式、聚类结构或关联强度",
+  "required_roles": [
+    "column",
+    "facet",
+    "row",
+    "value"
+  ],
+  "optional_roles": [
+    "adjusted_p",
+    "color",
+    "label",
+    "order",
+    "p_value",
+    "shape",
+    "significance_label"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "facet"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "color_legend",
+    "facets",
+    "heatmap_layer",
+    "matrix_tiles",
+    "significance_annotations"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 400,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "heatmap",
+    "id:042",
+    "style-042",
+    "添加显著性星号的热图-分面"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

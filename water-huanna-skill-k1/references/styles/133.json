@@ -1,0 +1,62 @@
+{
+  "id": 133,
+  "title": "散点+误差线+边际图(Python版)",
+  "family": "manual",
+  "source_category": "散点/气泡图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "error_lower",
+    "error_upper",
+    "x",
+    "y"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "annotations_optional",
+    "error_bars",
+    "primary_marks",
+    "scales"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": null,
+    "height": null
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "id:133",
+    "manual",
+    "style-133",
+    "散点+误差线+边际图",
+    "散点+误差线+边际图(Python版)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

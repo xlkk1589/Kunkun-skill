@@ -1,0 +1,54 @@
+{
+  "id": 76,
+  "title": "患者泳道图(R版)",
+  "family": "swimmer",
+  "source_category": "三元图",
+  "source_category_audited": false,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "end",
+    "event",
+    "start",
+    "subject"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "annotations_optional",
+    "primary_marks",
+    "scales"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 720,
+    "height": 800
+  },
+  "fidelity_risks": [],
+  "aliases": [
+    "id:076",
+    "style-076",
+    "swimmer",
+    "患者泳道图",
+    "患者泳道图(R版)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

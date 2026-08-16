@@ -1,0 +1,62 @@
+{
+  "id": 3,
+  "title": "圆形雷达图+分面(ggiraphExtra包)",
+  "family": "radar",
+  "source_category": "雷达图",
+  "source_category_audited": true,
+  "scientific_question": "比较多个指标构成的样本或组别轮廓",
+  "required_roles": [
+    "axis",
+    "facet",
+    "sample",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "polar",
+    "layout": [
+      "composite",
+      "facet"
+    ],
+    "package": "R:ggiraphExtra"
+  },
+  "visual_layers": [
+    "angular_axes",
+    "facets",
+    "radial_scale",
+    "series_path"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 228
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "extreme_aspect_ratio"
+  ],
+  "aliases": [
+    "id:003",
+    "radar",
+    "style-003",
+    "圆形雷达图+分面",
+    "圆形雷达图+分面(ggiraphExtra包)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

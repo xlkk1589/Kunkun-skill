@@ -1,0 +1,64 @@
+{
+  "id": 88,
+  "title": "时序图4:重复测量方差分析+事后检验",
+  "family": "time_series",
+  "source_category": "时间序列图",
+  "source_category_audited": true,
+  "scientific_question": "比较随时间变化的水平、趋势与不确定性",
+  "required_roles": [
+    "group",
+    "time",
+    "value"
+  ],
+  "optional_roles": [
+    "adjusted_p",
+    "color",
+    "label",
+    "order",
+    "p_value",
+    "shape",
+    "significance_label"
+  ],
+  "statistical_requirements": [
+    "repeated_measures_anova"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "observations",
+    "time_path",
+    "uncertainty_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 533
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "id:088",
+    "style-088",
+    "time_series",
+    "时序图4:重复测量方差分析+事后检验"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

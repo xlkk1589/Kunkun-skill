@@ -1,0 +1,52 @@
+{
+  "id": 22,
+  "title": "位点饱和突变能量热图(geom_tile)",
+  "family": "heatmap",
+  "source_category": "相关性图",
+  "source_category_audited": true,
+  "scientific_question": "识别矩阵模式、聚类结构或关联强度",
+  "required_roles": [
+    "column",
+    "row",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": "R:ggplot2"
+  },
+  "visual_layers": [
+    "color_legend",
+    "heatmap_layer",
+    "matrix_tiles"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 400
+  },
+  "fidelity_risks": [],
+  "aliases": [
+    "heatmap",
+    "id:022",
+    "style-022",
+    "位点饱和突变能量热图(geom_tile)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

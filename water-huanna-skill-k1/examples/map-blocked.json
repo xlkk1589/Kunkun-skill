@@ -1,0 +1,61 @@
+{
+  "style": {
+    "id": 92,
+    "title": "中国地图1",
+    "family": "map"
+  },
+  "target_fidelity": "l1",
+  "data_validation": {
+    "style_id": 92,
+    "title": "中国地图1",
+    "family": "map",
+    "score": 38.33,
+    "status": "blocked",
+    "resolved_roles": {
+      "latitude": "latitude",
+      "longitude": "longitude"
+    },
+    "missing": [
+      {
+        "role": "crs",
+        "reason": "空间图需要明确坐标参考系",
+        "accepted_examples": [
+          "crs",
+          "epsg",
+          "projection",
+          "坐标系",
+          "投影"
+        ]
+      }
+    ],
+    "fidelity_risks": [
+      "boundary_provenance_required",
+      "layout_sensitive",
+      "map_compliance_gate",
+      "projection_required",
+      "title_insufficient_use_style_id"
+    ],
+    "renderer_hint": {
+      "engine": "python",
+      "coordinate": "geo",
+      "layout": [],
+      "package": null
+    }
+  },
+  "fidelity_missing": [
+    {
+      "item": "boundary_source",
+      "reason": "地图需要合法且可追溯的边界数据"
+    },
+    {
+      "item": "projection",
+      "reason": "地图需要明确投影与坐标参考系"
+    },
+    {
+      "item": "compliance_review",
+      "reason": "涉及中国地图公开发布时需要地图合规核验"
+    }
+  ],
+  "decision": "blocked",
+  "reason": "缺少必要字段、统计前提或视觉规格"
+}

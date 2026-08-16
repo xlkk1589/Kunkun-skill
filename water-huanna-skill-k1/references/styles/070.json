@@ -1,0 +1,60 @@
+{
+  "id": 70,
+  "title": "系统发育树+背景颜色和名称+2层热图",
+  "family": "phylogenetic_tree",
+  "source_category": "系统发育树",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "newick_tree",
+    "tip_annotation"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "graph",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "annotation_tracks_optional",
+    "background_encoding",
+    "heatmap_layer",
+    "tip_labels",
+    "tree_branches"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "layout_and_node_order_recorded",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 600
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "id:070",
+    "phylogenetic_tree",
+    "style-070",
+    "系统发育树+背景颜色和名称+2层热图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

@@ -1,0 +1,5 @@
+Water-Huanna-Skill-K1 asset notice
+
+The three figures under assets/demos are original demonstration graphics generated for this project.
+The 159 reference images extracted during source-document auditing are excluded from this repository and package.
+Original case images remain the property of their respective authors, publishers, and source website.

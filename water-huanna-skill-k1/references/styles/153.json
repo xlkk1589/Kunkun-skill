@@ -1,0 +1,55 @@
+{
+  "id": 153,
+  "title": "渐变型:等高线颜色随密度水平渐变",
+  "family": "density_contour",
+  "source_category": "等高线/核密度图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "x",
+    "y"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "kernel_density"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "contours_or_fill",
+    "density_estimate",
+    "legend"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 585
+  },
+  "fidelity_risks": [
+    "color_scale_sensitive"
+  ],
+  "aliases": [
+    "density_contour",
+    "id:153",
+    "style-153",
+    "渐变型:等高线颜色随密度水平渐变"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

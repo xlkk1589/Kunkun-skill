@@ -1,0 +1,58 @@
+{
+  "id": 159,
+  "title": "模型参数恢复验证图",
+  "family": "parameter_recovery",
+  "source_category": "其他未分类图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "estimate",
+    "lower",
+    "parameter",
+    "truth",
+    "upper"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "estimates",
+    "truth_reference",
+    "uncertainty_intervals"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 342
+  },
+  "fidelity_risks": [
+    "extreme_aspect_ratio",
+    "model_outputs_required"
+  ],
+  "aliases": [
+    "id:159",
+    "parameter_recovery",
+    "style-159",
+    "模型参数恢复验证图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

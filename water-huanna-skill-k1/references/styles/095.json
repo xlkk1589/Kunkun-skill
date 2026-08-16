@@ -1,0 +1,61 @@
+{
+  "id": 95,
+  "title": "富集通路circos图+网络图",
+  "family": "network",
+  "source_category": "网络关系图",
+  "source_category_audited": true,
+  "scientific_question": "刻画实体间关系及关联强度",
+  "required_roles": [
+    "source",
+    "target",
+    "weight"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "graph",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "labels_optional",
+    "network_overlay",
+    "nodes",
+    "weighted_edges"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "layout_and_node_order_recorded",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 309
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "extreme_aspect_ratio",
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "id:095",
+    "network",
+    "style-095",
+    "富集通路circos图+网络图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

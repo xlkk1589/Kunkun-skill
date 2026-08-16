@@ -1,0 +1,61 @@
+{
+  "id": 137,
+  "title": "散点图+拟合曲线+均值+双向误差线",
+  "family": "scatter",
+  "source_category": "散点/气泡图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "error_lower",
+    "error_upper",
+    "x",
+    "y"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "error_bars",
+    "fit_optional",
+    "points",
+    "uncertainty_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 685
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "id:137",
+    "scatter",
+    "style-137",
+    "散点图+拟合曲线+均值+双向误差线"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

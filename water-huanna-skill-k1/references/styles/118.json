@@ -1,0 +1,60 @@
+{
+  "id": 118,
+  "title": "分面-小提琴图",
+  "family": "violin",
+  "source_category": "小提琴/箱线图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "facet",
+    "group",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "kernel_density"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "facet"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "density",
+    "facets",
+    "median_or_box",
+    "raw_points_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 733
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping"
+  ],
+  "aliases": [
+    "id:118",
+    "style-118",
+    "violin",
+    "分面-小提琴图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

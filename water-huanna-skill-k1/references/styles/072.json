@@ -1,0 +1,54 @@
+{
+  "id": 72,
+  "title": "三元图(CD4 T 细胞状态)",
+  "family": "ternary",
+  "source_category": "三元图",
+  "source_category_audited": true,
+  "scientific_question": "比较三类闭合组成的相对结构",
+  "required_roles": [
+    "component_a",
+    "component_b",
+    "component_c"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "ternary",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "composition_points",
+    "group_legend_optional",
+    "ternary_axes"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "title_insufficient_use_style_id"
+  ],
+  "aliases": [
+    "id:072",
+    "style-072",
+    "ternary",
+    "三元图(CD4 T 细胞状态)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

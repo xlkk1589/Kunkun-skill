@@ -1,0 +1,63 @@
+{
+  "id": 107,
+  "title": "环状柱形图+误差线(11花瓣4柱子)",
+  "family": "circular_bar",
+  "source_category": "柱形图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "category",
+    "error_lower",
+    "error_upper",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "polar",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "bar_layer",
+    "error_bars",
+    "labels",
+    "polar_bars",
+    "radial_scale"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "layout_sensitive",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "circular_bar",
+    "id:107",
+    "style-107",
+    "环状柱形图+误差线(11花瓣4柱子)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": 156,
+  "title": "分组-和弦图+外围条形图",
+  "family": "chord",
+  "source_category": "其他未分类图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "group",
+    "source",
+    "target",
+    "weight"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "polar",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "outer_track",
+    "outer_track_optional",
+    "sectors",
+    "weighted_chords"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "layout_and_node_order_recorded",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "chord",
+    "id:156",
+    "style-156",
+    "分组-和弦图+外围条形图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

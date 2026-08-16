@@ -1,0 +1,60 @@
+{
+  "id": 44,
+  "title": "基础热图-分面风格",
+  "family": "heatmap",
+  "source_category": "基因/蛋白表达图",
+  "source_category_audited": true,
+  "scientific_question": "识别矩阵模式、聚类结构或关联强度",
+  "required_roles": [
+    "column",
+    "facet",
+    "row",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "facet"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "color_legend",
+    "facets",
+    "heatmap_layer",
+    "matrix_tiles"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 300
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "extreme_aspect_ratio"
+  ],
+  "aliases": [
+    "heatmap",
+    "id:044",
+    "style-044",
+    "基础热图-分面风格"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

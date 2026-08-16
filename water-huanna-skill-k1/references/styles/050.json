@@ -1,0 +1,55 @@
+{
+  "id": 50,
+  "title": "多个比较组-火山图",
+  "family": "volcano",
+  "source_category": "基因/蛋白表达图",
+  "source_category_audited": true,
+  "scientific_question": "筛选同时满足效应阈值和显著性阈值的特征",
+  "required_roles": [
+    "effect",
+    "feature",
+    "p_value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "effect_significance_points",
+    "feature_labels_optional",
+    "threshold_lines"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "model_outputs_required"
+  ],
+  "aliases": [
+    "id:050",
+    "style-050",
+    "volcano",
+    "多个比较组-火山图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

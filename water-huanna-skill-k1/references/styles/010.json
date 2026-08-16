@@ -1,0 +1,59 @@
+{
+  "id": 10,
+  "title": "差异云雨图+分组(gghalves包)",
+  "family": "raincloud",
+  "source_category": "云雨图",
+  "source_category_audited": true,
+  "scientific_question": "同时检查组间分布、四分位数与个体观测",
+  "required_roles": [
+    "group",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "kernel_density"
+  ],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": "R:gghalves"
+  },
+  "visual_layers": [
+    "box_summary",
+    "density",
+    "raw_points"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 500
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping"
+  ],
+  "aliases": [
+    "id:010",
+    "raincloud",
+    "style-010",
+    "差异云雨图+分组",
+    "差异云雨图+分组(gghalves包)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

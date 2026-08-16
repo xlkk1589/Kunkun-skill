@@ -1,0 +1,6 @@
+﻿term,estimate,lower,upper,p_value
+Water level,0.42,0.18,0.66,0.001
+Temperature,-0.17,-0.31,-0.03,0.018
+Nutrients,0.29,0.10,0.48,0.004
+Vegetation,0.51,0.28,0.74,0.0002
+Wind,-0.08,-0.22,0.06,0.260

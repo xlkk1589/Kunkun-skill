@@ -1,0 +1,55 @@
+{
+  "id": 37,
+  "title": "冲击图",
+  "family": "sankey_alluvial",
+  "source_category": "桑基/冲击图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "source",
+    "target",
+    "weight"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "graph",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "labels",
+    "nodes_or_strata",
+    "weighted_flows"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "layout_and_node_order_recorded",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 769,
+    "height": 799
+  },
+  "fidelity_risks": [
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "id:037",
+    "sankey_alluvial",
+    "style-037",
+    "冲击图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

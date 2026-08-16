@@ -1,0 +1,64 @@
+{
+  "id": 147,
+  "title": "环状分组折线图+显著性",
+  "family": "line",
+  "source_category": "折线图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "group",
+    "x",
+    "y"
+  ],
+  "optional_roles": [
+    "adjusted_p",
+    "color",
+    "label",
+    "order",
+    "p_value",
+    "shape",
+    "significance_label"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "polar",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "annotations_optional",
+    "primary_marks",
+    "scales",
+    "significance_annotations"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "layout_sensitive",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "id:147",
+    "line",
+    "style-147",
+    "环状分组折线图+显著性"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

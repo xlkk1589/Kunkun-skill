@@ -1,0 +1,66 @@
+{
+  "id": 86,
+  "title": "时序图2:分面+误差带",
+  "family": "time_series",
+  "source_category": "时间序列图",
+  "source_category_audited": true,
+  "scientific_question": "比较随时间变化的水平、趋势与不确定性",
+  "required_roles": [
+    "error_lower",
+    "error_upper",
+    "facet",
+    "group",
+    "time",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite",
+      "facet"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "error_bars",
+    "facets",
+    "observations",
+    "time_path",
+    "uncertainty_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches",
+    "statistics_recomputed_or_verified"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 240
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "extreme_aspect_ratio",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "id:086",
+    "style-086",
+    "time_series",
+    "时序图2:分面+误差带"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

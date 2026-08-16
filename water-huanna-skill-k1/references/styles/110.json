@@ -1,0 +1,55 @@
+{
+  "id": 110,
+  "title": "分组-环状柱形图",
+  "family": "circular_bar",
+  "source_category": "柱形图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "category",
+    "group",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "polar",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "bar_layer",
+    "labels",
+    "polar_bars",
+    "radial_scale"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "circular_bar",
+    "id:110",
+    "style-110",
+    "分组-环状柱形图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

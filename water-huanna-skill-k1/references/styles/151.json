@@ -1,0 +1,59 @@
+{
+  "id": 151,
+  "title": "渐变色山脊图+双向柱形图",
+  "family": "ridge",
+  "source_category": "山脊/峰峦图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "group",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "kernel_density"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "bar_layer",
+    "group_labels",
+    "stacked_density"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 742
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "color_scale_sensitive"
+  ],
+  "aliases": [
+    "id:151",
+    "ridge",
+    "style-151",
+    "渐变色山脊图+双向柱形图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

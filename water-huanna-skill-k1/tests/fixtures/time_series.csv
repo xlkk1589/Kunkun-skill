@@ -1,0 +1,13 @@
+﻿subject_id,time,group,value
+A01,2026-01-01,Control,2.1
+A01,2026-02-01,Control,2.3
+A01,2026-03-01,Control,2.2
+A02,2026-01-01,Control,2.0
+A02,2026-02-01,Control,2.1
+A02,2026-03-01,Control,2.2
+B01,2026-01-01,Treatment,2.2
+B01,2026-02-01,Treatment,2.8
+B01,2026-03-01,Treatment,3.4
+B02,2026-01-01,Treatment,2.3
+B02,2026-02-01,Treatment,2.9
+B02,2026-03-01,Treatment,3.5

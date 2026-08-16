@@ -1,0 +1,60 @@
+{
+  "id": 93,
+  "title": "中国地图2",
+  "family": "map",
+  "source_category": "样本地理分布图",
+  "source_category_audited": true,
+  "scientific_question": "展示样点或区域属性的空间分布",
+  "required_roles": [
+    "crs",
+    "latitude",
+    "longitude"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "geo",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "compliant_boundary_or_basemap",
+    "legend",
+    "spatial_marks"
+  ],
+  "acceptance_checks": [
+    "boundary_and_projection_recorded",
+    "canvas_aspect_checked",
+    "map_compliance_passed",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 480
+  },
+  "fidelity_risks": [
+    "boundary_provenance_required",
+    "layout_sensitive",
+    "map_compliance_gate",
+    "projection_required",
+    "title_insufficient_use_style_id"
+  ],
+  "aliases": [
+    "id:093",
+    "map",
+    "style-093",
+    "中国地图2"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

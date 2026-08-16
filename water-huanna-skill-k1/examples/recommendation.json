@@ -1,0 +1,220 @@
+{
+  "data": "G:\\0708-GIS数据库\\相关杂七杂八\\Kunkun skill\\water-huanna-skill-k1\\tests\\fixtures\\grouped_values.csv",
+  "goal": "比较三组数据的分布、离群值与组间差异",
+  "profile": {
+    "rows": 21,
+    "columns": 3,
+    "column_order": [
+      "sample_id",
+      "group",
+      "value"
+    ],
+    "column_details": {
+      "sample_id": {
+        "type": "categorical",
+        "missing": 0,
+        "unique": 21,
+        "min": null,
+        "max": null
+      },
+      "group": {
+        "type": "categorical",
+        "missing": 0,
+        "unique": 3,
+        "min": null,
+        "max": null
+      },
+      "value": {
+        "type": "numeric",
+        "missing": 0,
+        "unique": 19,
+        "min": 2.0,
+        "max": 4.0
+      }
+    },
+    "numeric_columns": [
+      "value"
+    ],
+    "datetime_columns": [],
+    "categorical_columns": [
+      "sample_id",
+      "group"
+    ],
+    "inferred_roles": {
+      "sample": "sample_id",
+      "group": "group",
+      "value": "value",
+      "p_value": "sample_id",
+      "component_a": "sample_id",
+      "series": "group",
+      "y": "value",
+      "x": "value",
+      "category": "sample_id"
+    },
+    "matrix_like": false,
+    "has_repeated_subjects": false
+  },
+  "recommendations": [
+    {
+      "style_id": 82,
+      "title": "蝶状小提琴图",
+      "family": "violin",
+      "score": 83.0,
+      "status": "eligible",
+      "resolved_roles": {
+        "group": "group",
+        "value": "value"
+      },
+      "missing": [],
+      "fidelity_risks": [],
+      "renderer_hint": {
+        "engine": "python",
+        "coordinate": "cartesian",
+        "layout": [],
+        "package": null
+      }
+    },
+    {
+      "style_id": 122,
+      "title": "基础箱线图",
+      "family": "boxplot",
+      "score": 83.0,
+      "status": "eligible",
+      "resolved_roles": {
+        "group": "group",
+        "value": "value"
+      },
+      "missing": [],
+      "fidelity_risks": [],
+      "renderer_hint": {
+        "engine": "python",
+        "coordinate": "cartesian",
+        "layout": [],
+        "package": null
+      }
+    },
+    {
+      "style_id": 123,
+      "title": "扇形箱线图",
+      "family": "boxplot",
+      "score": 83.0,
+      "status": "eligible",
+      "resolved_roles": {
+        "group": "group",
+        "value": "value"
+      },
+      "missing": [],
+      "fidelity_risks": [],
+      "renderer_hint": {
+        "engine": "python",
+        "coordinate": "polar",
+        "layout": [],
+        "package": null
+      }
+    }
+  ],
+  "blocked_examples": [
+    {
+      "style_id": 125,
+      "title": "配对箱线图",
+      "family": "boxplot",
+      "score": 66.33,
+      "status": "blocked",
+      "resolved_roles": {
+        "group": "group",
+        "value": "value"
+      },
+      "missing": [
+        {
+          "role": "subject",
+          "reason": "配对或重复测量必须识别同一观察对象",
+          "accepted_examples": [
+            "subject",
+            "subject_id",
+            "patient",
+            "patient_id",
+            "个体",
+            "患者",
+            "受试者"
+          ]
+        }
+      ],
+      "fidelity_risks": [],
+      "renderer_hint": {
+        "engine": "python",
+        "coordinate": "cartesian",
+        "layout": [],
+        "package": null
+      }
+    },
+    {
+      "style_id": 118,
+      "title": "分面-小提琴图",
+      "family": "violin",
+      "score": 65.33,
+      "status": "blocked",
+      "resolved_roles": {
+        "group": "group",
+        "value": "value"
+      },
+      "missing": [
+        {
+          "role": "facet",
+          "reason": "该图形编码需要此字段或结构",
+          "accepted_examples": [
+            "facet",
+            "panel",
+            "stratum",
+            "分面",
+            "层级"
+          ]
+        }
+      ],
+      "fidelity_risks": [
+        "alignment_and_clipping"
+      ],
+      "renderer_hint": {
+        "engine": "python",
+        "coordinate": "cartesian",
+        "layout": [
+          "facet"
+        ],
+        "package": null
+      }
+    },
+    {
+      "style_id": 1,
+      "title": "多边形雷达图(fmsb包)",
+      "family": "radar",
+      "score": 57.33,
+      "status": "blocked",
+      "resolved_roles": {
+        "sample": "sample_id",
+        "value": "value"
+      },
+      "missing": [
+        {
+          "role": "axis",
+          "reason": "该图形编码需要此字段或结构",
+          "accepted_examples": [
+            "axis",
+            "metric",
+            "indicator",
+            "指标"
+          ]
+        }
+      ],
+      "fidelity_risks": [
+        "extreme_aspect_ratio"
+      ],
+      "renderer_hint": {
+        "engine": "r",
+        "coordinate": "polar",
+        "layout": [],
+        "package": "R:fmsb"
+      }
+    }
+  ],
+  "decision": "ready",
+  "message": "已按科学适配、字段完备和复现风险排序"
+}

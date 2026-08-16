@@ -1,0 +1,63 @@
+{
+  "id": 96,
+  "title": "柱形图+方差分析+Tukey's Test",
+  "family": "bar",
+  "source_category": "柱形图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "category",
+    "value"
+  ],
+  "optional_roles": [
+    "adjusted_p",
+    "color",
+    "label",
+    "order",
+    "p_value",
+    "shape",
+    "significance_label"
+  ],
+  "statistical_requirements": [
+    "tukey_multiple_comparison"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "axis",
+    "bar_layer",
+    "bars",
+    "labels_optional"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 600,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "statistical_annotation_required"
+  ],
+  "aliases": [
+    "bar",
+    "id:096",
+    "style-096",
+    "柱形图+方差分析+Tukey's Test"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

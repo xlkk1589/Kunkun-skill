@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "title": "多边形雷达图(fmsb包)",
+  "family": "radar",
+  "source_category": "雷达图",
+  "source_category_audited": true,
+  "scientific_question": "比较多个指标构成的样本或组别轮廓",
+  "required_roles": [
+    "axis",
+    "sample",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "polar",
+    "layout": [],
+    "package": "R:fmsb"
+  },
+  "visual_layers": [
+    "angular_axes",
+    "radial_scale",
+    "series_path"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 394
+  },
+  "fidelity_risks": [
+    "extreme_aspect_ratio"
+  ],
+  "aliases": [
+    "id:001",
+    "radar",
+    "style-001",
+    "多边形雷达图",
+    "多边形雷达图(fmsb包)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

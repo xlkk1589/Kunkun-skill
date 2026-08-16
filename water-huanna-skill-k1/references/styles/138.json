@@ -1,0 +1,53 @@
+{
+  "id": 138,
+  "title": "差异 OTU 曼哈顿图",
+  "family": "manhattan",
+  "source_category": "散点/气泡图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "feature",
+    "group",
+    "p_value",
+    "position"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "annotations_optional",
+    "primary_marks",
+    "scales"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 790,
+    "height": 800
+  },
+  "fidelity_risks": [],
+  "aliases": [
+    "id:138",
+    "manhattan",
+    "style-138",
+    "差异 OTU 曼哈顿图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

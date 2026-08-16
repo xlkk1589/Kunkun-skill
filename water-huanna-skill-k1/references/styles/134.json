@@ -1,0 +1,60 @@
+{
+  "id": 134,
+  "title": "分组气泡图+线性拟合",
+  "family": "bubble",
+  "source_category": "散点/气泡图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "group",
+    "size",
+    "x",
+    "y"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "linear_model"
+  ],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "area_scale",
+    "color_scale_optional",
+    "points"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 711,
+    "height": 800
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping"
+  ],
+  "aliases": [
+    "bubble",
+    "id:134",
+    "style-134",
+    "分组气泡图+线性拟合"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

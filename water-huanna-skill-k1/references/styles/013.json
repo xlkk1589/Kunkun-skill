@@ -1,0 +1,58 @@
+{
+  "id": 13,
+  "title": "拟合曲线+残差箱式图(Python版)",
+  "family": "boxplot",
+  "source_category": "相关性图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "group",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "box",
+    "median",
+    "outliers_optional",
+    "whiskers"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 796
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping"
+  ],
+  "aliases": [
+    "boxplot",
+    "id:013",
+    "style-013",
+    "拟合曲线+残差箱式图",
+    "拟合曲线+残差箱式图(Python版)"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

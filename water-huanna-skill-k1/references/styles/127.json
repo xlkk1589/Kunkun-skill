@@ -1,0 +1,53 @@
+{
+  "id": 127,
+  "title": "展示样本信息的环形图",
+  "family": "circular_sample_track",
+  "source_category": "棒棒糖/哑铃图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "annotation_track",
+    "sample"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "polar",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "annotations_optional",
+    "primary_marks",
+    "scales"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 799
+  },
+  "fidelity_risks": [
+    "layout_sensitive"
+  ],
+  "aliases": [
+    "circular_sample_track",
+    "id:127",
+    "style-127",
+    "展示样本信息的环形图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

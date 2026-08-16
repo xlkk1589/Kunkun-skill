@@ -1,0 +1,59 @@
+{
+  "id": 29,
+  "title": "一维变量+核密度(R版)-彩虹色",
+  "family": "correlation_matrix",
+  "source_category": "相关性图",
+  "source_category_audited": true,
+  "scientific_question": "依据字段角色、研究设计和目标解释该图形编码",
+  "required_roles": [
+    "numeric_features",
+    "sample"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [
+    "correlation_method_and_missing_policy"
+  ],
+  "renderer_hint": {
+    "engine": "r",
+    "coordinate": "cartesian",
+    "layout": [
+      "composite"
+    ],
+    "package": null
+  },
+  "visual_layers": [
+    "color_or_glyph_legend",
+    "correlation_matrix"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "panel_alignment_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 651
+  },
+  "fidelity_risks": [
+    "alignment_and_clipping",
+    "color_scale_sensitive"
+  ],
+  "aliases": [
+    "correlation_matrix",
+    "id:029",
+    "style-029",
+    "一维变量+核密度(R版)-彩虹色",
+    "一维变量+核密度-彩虹色"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}

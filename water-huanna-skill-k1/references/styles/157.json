@@ -1,0 +1,52 @@
+{
+  "id": 157,
+  "title": "表格形式的热图",
+  "family": "heatmap",
+  "source_category": "其他未分类图",
+  "source_category_audited": true,
+  "scientific_question": "识别矩阵模式、聚类结构或关联强度",
+  "required_roles": [
+    "column",
+    "row",
+    "value"
+  ],
+  "optional_roles": [
+    "color",
+    "label",
+    "order",
+    "shape"
+  ],
+  "statistical_requirements": [],
+  "renderer_hint": {
+    "engine": "python",
+    "coordinate": "cartesian",
+    "layout": [],
+    "package": null
+  },
+  "visual_layers": [
+    "color_legend",
+    "heatmap_layer",
+    "matrix_tiles"
+  ],
+  "acceptance_checks": [
+    "canvas_aspect_checked",
+    "required_roles_resolved",
+    "scientific_question_matches"
+  ],
+  "reference_canvas": {
+    "width": 800,
+    "height": 707
+  },
+  "fidelity_risks": [],
+  "aliases": [
+    "heatmap",
+    "id:157",
+    "style-157",
+    "表格形式的热图"
+  ],
+  "fidelity_policy": {
+    "l1_scientific_equivalence": "requires all required_roles and statistical prerequisites",
+    "l2_visual_high_fidelity": "also requires theme, fonts, exact annotations and layout parameters",
+    "l3_pixel_level": "also requires original code, data, versions, fonts, random seeds and output device"
+  }
+}
